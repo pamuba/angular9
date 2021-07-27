@@ -6,6 +6,9 @@ import { AppComponent } from './app.component';
 import { ChildComponent } from './child/child.component';
 import { ClassBindingComponent } from './class-binding/class-binding.component';
 import { StyleBindingComponent } from './style-binding/style-binding.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MaterialModule } from './material.module';
+import { MaterialDemoComponent } from './material-demo/material-demo.component';
 
 
 @NgModule({
@@ -14,10 +17,13 @@ import { StyleBindingComponent } from './style-binding/style-binding.component';
     ChildComponent,
     ClassBindingComponent,
     StyleBindingComponent,
+    MaterialDemoComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]
