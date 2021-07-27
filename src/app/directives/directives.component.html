@@ -1,0 +1,23 @@
+<div class="container">
+    <h2 *ngIf="displayName;then thenBlock; else elseBlock">Directives</h2>
+
+
+    <ng-template #thenBlock>
+        <h2>Inside the then template</h2>
+    </ng-template>
+
+
+    <ng-template #elseBlock>
+        <h2>Inside the else template</h2>
+    </ng-template>
+
+    <div [ngSwitch]="color">
+        <div [style.color]="color" *ngSwitchCase="'red'">RED COLOR</div>
+        <div [style.color]="color" *ngSwitchCase="'green'">GREEN COLOR</div>
+        <div [style.color]="color" *ngSwitchCase="'blue'">BLUE COLOR</div>
+        <div *ngSwitchDefault>CHOOSE AGAIN</div>
+    </div>
+</div>
+
+
+<!-- ng-template -->

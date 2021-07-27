@@ -1,0 +1,38 @@
+1. Component (root component-contains all other components)
+2. Module
+3. Services
+4. Directives *ngFor
+
+Component 4 files
+.ts + class + metadata/decorator
+.html
+.css
+.spec.ts
+
+0.Inline components
+1.property binding
+
+Attribute Vs Property
+Attributes belongs to HTML
+Properties belongs to DOM
+
+Attributes initializes the Properties
+
+Properties can be mutated, Attributes cant be
+
+2.class bnding
+ 
+3.style binding
+
+4.Material UI
+
+5. Template Reference Variables
+
+6. Two way data binding
+
+7. Structural Directives(add or remove DOM elements)
+*ngIf
+*ngSwitch
+*ngFor
+
+8. Switch

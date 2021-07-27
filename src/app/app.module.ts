@@ -9,6 +9,10 @@ import { StyleBindingComponent } from './style-binding/style-binding.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material.module';
 import { MaterialDemoComponent } from './material-demo/material-demo.component';
+import { TemplateRefComponent } from './template-ref/template-ref.component';
+import { TwoWayBindingComponent } from './two-way-binding/two-way-binding.component';
+import { FormsModule } from '@angular/forms';
+import { DirectivesComponent } from './directives/directives.component';
 
 
 @NgModule({
@@ -18,12 +22,16 @@ import { MaterialDemoComponent } from './material-demo/material-demo.component';
     ClassBindingComponent,
     StyleBindingComponent,
     MaterialDemoComponent,
+    TemplateRefComponent,
+    TwoWayBindingComponent,
+    DirectivesComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
