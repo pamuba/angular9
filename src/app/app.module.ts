@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ChildComponent } from './child/child.component';
 import { ClassBindingComponent } from './class-binding/class-binding.component';
+import { StyleBindingComponent } from './style-binding/style-binding.component';
 
 
 @NgModule({
@@ -12,6 +13,7 @@ import { ClassBindingComponent } from './class-binding/class-binding.component';
     AppComponent,
     ChildComponent,
     ClassBindingComponent,
+    StyleBindingComponent,
   ],
   imports: [
     BrowserModule,
