@@ -1,4 +1,11 @@
 <div class="container">
+    <!-- <ng-content select=".header"></ng-content>
     <ng-content select=".header"></ng-content>
-    <ng-content select=".header"></ng-content>
+    <hr> -->
+    <ng-container  *ngIf="display">
+        <div *ngFor="let info of details">
+            <p>Inside</p>
+            {{ info.content }}
+        </div>
+    </ng-container>
 </div>

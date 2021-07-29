@@ -40,3 +40,5 @@ Properties can be mutated, Attributes cant be
 9. Component Interaction
 
 10. Content Projection
+
+11. ng-template, ng-content, ng-container

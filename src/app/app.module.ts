@@ -15,7 +15,10 @@ import { FormsModule } from '@angular/forms';
 import { DirectivesComponent } from './directives/directives.component';
 import { InteractionComponent } from './interaction/interaction.component';
 import { ContentProjComponent } from './content-proj/content-proj.component';
-
+import { PipesComponent } from './pipes/pipes.component';
+import { EmployeeListComponent } from './employee-list/employee-list.component';
+import { EmployeeDetailComponent } from './employee-detail/employee-detail.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -29,13 +32,17 @@ import { ContentProjComponent } from './content-proj/content-proj.component';
     DirectivesComponent,
     InteractionComponent,
     ContentProjComponent,
+    PipesComponent,
+    EmployeeListComponent,
+    EmployeeDetailComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

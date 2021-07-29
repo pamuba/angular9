@@ -7,6 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContentProjComponent implements OnInit {
 
+  public display = true;
+  public details = [
+    {"id":"1","content":"Angular"},
+    {"id":"2","content":"React"}
+  ]
   constructor() { }
 
   ngOnInit(): void {
