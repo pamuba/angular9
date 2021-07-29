@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-emp-list',
@@ -7,9 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EmpListComponent implements OnInit {
 
-  constructor() { }
+  public id;
+  constructor(private route: ActivatedRoute) { }
 
   ngOnInit(): void {
+    this.id = parseInt(this.route.snapshot.paramMap.get('id'))
   }
 
 }

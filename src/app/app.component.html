@@ -1,10 +1,10 @@
 <div class="container">
     <h1>App Component</h1>
-    <h2>{{title}}</h2>
+    <!-- <h2>{{title}}</h2>
     <hr>
     <interaction (childEvent)="message=$event" [parentData] = "title"></interaction>
     <hr>
-    <h2>Message from Child:{{message}}</h2>
+    <h2>Message from Child:{{message}}</h2> -->
     <!-- <content-proj>
         <div class='header'>
             <h1>Hello World</h1>
@@ -20,7 +20,11 @@
         </div>
     </content-proj> -->
 
-    <employee-detail></employee-detail>
-    <employee-list></employee-list>
+    <!-- <employee-detail></employee-detail>
+    <employee-list></employee-list> -->
+    <nav>
+        <a routerLink="/departments" routerLinkActive="active" >Departments</a>
+        <a routerLink="/employees" routerLinkActive="active" >Employees</a>
+    </nav>
     <router-outlet></router-outlet>
 </div>
