@@ -19,6 +19,7 @@ import { PipesComponent } from './pipes/pipes.component';
 import { EmployeeListComponent } from './employee-list/employee-list.component';
 import { EmployeeDetailComponent } from './employee-detail/employee-detail.component';
 import { HttpClientModule } from '@angular/common/http';
+import { routingComponents } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -35,6 +36,7 @@ import { HttpClientModule } from '@angular/common/http';
     PipesComponent,
     EmployeeListComponent,
     EmployeeDetailComponent,
+    routingComponents
   ],
   imports: [
     BrowserModule,
