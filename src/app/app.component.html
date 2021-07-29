@@ -2,5 +2,21 @@
     <h1>App Component</h1>
     <h2>{{title}}</h2>
     <hr>
-    <directives></directives>
+    <interaction (childEvent)="message=$event" [parentData] = "title"></interaction>
+    <hr>
+    <h2>Message from Child:{{message}}</h2>
+    <content-proj>
+        <div class='header'>
+            <h1>Hello World</h1>
+            <h2>Hello Universe</h2>
+            <button class="btn btn-danger">Say Hello</button>
+        </div>
+    </content-proj>
+    <content-proj>
+        <div class='header'>
+            <h1>Hello Universe</h1>
+            <h2>Hello Universe</h2>
+            <button class="btn btn-info">Say Hii</button>
+        </div>
+    </content-proj>
 </div>

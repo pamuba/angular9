@@ -13,6 +13,8 @@ import { TemplateRefComponent } from './template-ref/template-ref.component';
 import { TwoWayBindingComponent } from './two-way-binding/two-way-binding.component';
 import { FormsModule } from '@angular/forms';
 import { DirectivesComponent } from './directives/directives.component';
+import { InteractionComponent } from './interaction/interaction.component';
+import { ContentProjComponent } from './content-proj/content-proj.component';
 
 
 @NgModule({
@@ -25,6 +27,8 @@ import { DirectivesComponent } from './directives/directives.component';
     TemplateRefComponent,
     TwoWayBindingComponent,
     DirectivesComponent,
+    InteractionComponent,
+    ContentProjComponent,
   ],
   imports: [
     BrowserModule,

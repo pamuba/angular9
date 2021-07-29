@@ -36,3 +36,7 @@ Properties can be mutated, Attributes cant be
 *ngFor
 
 8. Switch
+
+9. Component Interaction
+
+10. Content Projection
